@@ -38,7 +38,7 @@ command called and it must finish with `-` (it's a lazy way to tell the CLI
 you're taking the parameters from stdin). I don't like it either, but I'm 
 too lazy to fix it.
 
-Here's a working example:
+Here's a working example, filtering machines named `LAB` + whatever:
 
     aws ec2 describe-instances --filters 'Name=tag:Name,Values=LAB*' \
     --query 'Reservations[*].Instances[*].PublicIpAddress[]' | lazymanssh \
