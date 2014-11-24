@@ -10,7 +10,7 @@ setup(
     maintainer='Capi Etheriel',
     maintainer_email='barraponto@gmail.com',
     packages=find_packages(),
-    install_requires=['stormssh', 'click'],
+    install_requires=['stormssh', 'click', 'awscli'],
     entry_points={
         'console_scripts': [
             'lazymanssh = lazymanssh.lazymanssh:lazyness'
